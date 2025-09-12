@@ -9,8 +9,8 @@ ufw allow out 53/udp
 ufw allow out 53/tcp
 ufw allow out 8080/tcp
 ufw allow out 123/udp
-ufw allow out 127.0.0.53 port 53 proto udp
-ufw allow out 127.0.0.53 port 53 proto tcp
+ufw allow out to 127.0.0.53 port 53 proto udp
+ufw allow out to 127.0.0.53 port 53 proto tcp
 echo "[*] Enable UFW..."
 ufw --force enable
 
