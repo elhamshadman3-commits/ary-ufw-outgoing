@@ -3,6 +3,8 @@ ufw default deny outgoing
 ufw default allow routed
 
 echo "[*] Allow outbound only for web + DNS..."
+ufw allow out on lo
+ufw allow in on lo
 ufw allow out 80/tcp
 ufw allow out 443/tcp
 ufw allow out 53/udp
