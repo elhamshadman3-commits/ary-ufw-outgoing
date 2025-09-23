@@ -12,6 +12,7 @@ ufw allow out 123/udp
 ufw allow out to 127.0.0.53 port 53 proto udp
 ufw allow out to 127.0.0.53 port 53 proto tcp
 ufw allow out to 127.0.0.54 port 53 proto tcp
+ufw allow out to 127.0.0.54 port 53 proto udp
 ufw allow to 127.0.0.1 port 11111 proto tcp
 ufw allow to 127.0.0.1 port 62789  proto tcp
 
